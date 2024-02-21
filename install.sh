@@ -10,6 +10,11 @@ apt -y install apache2
 ufw enable
 ufw allow 'Apache'
 
+# Install django
+apt -y install python3
+apt install python3-django
+
+# TODO: Comment out apache setup for now, can use django web server for development
 # Copy project files
-cp $DIR/index.html /var/www/html/
-cp -R $DIR/files /var/www/html/
+#cp $DIR/index.html /var/www/html/
+#cp -R $DIR/files /var/www/html/
